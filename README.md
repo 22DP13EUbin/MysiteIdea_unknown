@@ -1,7 +1,3 @@
-Вот перевод текста на латышский язык:
-
----
-
 ### **Projekts: "Time Capsule" — virtuālā laika kapsula**
 
 #### **Projekta apraksts:**
