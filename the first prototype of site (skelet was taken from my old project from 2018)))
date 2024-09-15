@@ -1,4 +1,5 @@
-Es vēl neatceros visu par to, kā tas šeit strādāja, bet es zinu apmēram 85% no tā. Vissvarīgākais, kas jāatceras, ir CSS
+#Es vēl neatceros visu par to, kā tas šeit strādāja, bet es zinu apmēram 85% no tā. Vissvarīgākais, kas jāatceras, ir CSS
+#Šeit jau esmu pievienojis pāris lietas no sevis
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -7,7 +8,6 @@ Es vēl neatceros visu par to, kā tas šeit strādāja, bet es zinu apmēram 85
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Capsule</title>
     <style>
-        /* Базовые стили */
         body {
             font-family: Arial;
             margin: 0;
@@ -74,7 +74,6 @@ Es vēl neatceros visu par to, kā tas šeit strādāja, bet es zinu apmēram 85
 </head>
 <body>
 
-    <!-- Заголовок сайта -->
     <header>
         <h1>Time Capsule</h1>
         <nav>
@@ -86,7 +85,6 @@ Es vēl neatceros visu par to, kā tas šeit strādāja, bet es zinu apmēram 85
         </nav>
     </header>
 
-    <!-- Основной раздел -->
     <main>
         <article>
             <h1>Добро пожаловать на Time Capsule</h1>
@@ -95,7 +93,6 @@ Es vēl neatceros visu par to, kā tas šeit strādāja, bet es zinu apmēram 85
             <img src="https://timecapsulesuk.com/cdn/shop/products/Celebration-Time-Capsules-UK-sq-transparent_grande.png?v=1486461999"/>
         </article>
 
-        <!-- Боковая панель -->
         <aside>
             <h2>Связанные статьи</h2>
             <ul>
@@ -106,7 +103,6 @@ Es vēl neatceros visu par to, kā tas šeit strādāja, bet es zinu apmēram 85
         </aside>
     </main>
 
-    <!-- Нижний колонтитул -->
     <footer>
         <p>&copy; 2024 Time Capsule. Все права защищены.</p>
         <p>
