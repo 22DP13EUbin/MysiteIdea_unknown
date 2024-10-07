@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mana Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.card {
+            position: relative;
+            width: 300px; /* Adjust size as needed */
+            height: 400px; /* Adjust size as needed */
+            overflow: hidden;
+            border-radius: 7px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            z-index: 2;
+        }
+header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.skill-bar {
+  display: inline-block;
+  height: 5px;
+  background: #4caf50;
+  margin-left: 10px;
+  transition: width 0.5s;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer a {
+  color: #ffeb3b;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+article {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2575fc;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Ervīns Ubiņins</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Par mani</a></li>
+                <li><a href="#skills">Prasmes</a></li>
+                <li><a href="#projects">Projekti</a></li>
+                <li><a href="#contact">Kontakti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Par mani</h2>
+            <img src="your-photo.jpg" alt="Mana bilde">
+            <p>Īss apraksts par sevi un savām interesēm.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Prasmes</h2>
+            <ul>
+                <li>HTML <span class="skill-bar" style="width: 65%;"></span></li>
+                <li>CSS <span class="skill-bar" style="width: 35%;"></span></li>
+                <li>JavaScript <span class="skill-bar" style="width: 1%;"></span></li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projekti</h2>
+            <div class="card">
+              <img src="https://lff.lv/comet/person/_resized/23900_1022059367_140_0.jpg" alt="Card Image">
+              <div class="text">
+                  <h2>Your Title</h2>
+                  <p>Your text content goes here.</p>
+              </div>
+          </div>
+
+          <div class="card">
+            <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJfwObaZzRU7dCJlo-cnvLLNKjulGRG4cBOi_zV-pjnh1q9qCwxNj2qYduLJ1c4YQ6Er1e4wLi5jcPtvZ_MwHcy6Cci5CqImRK11xFEbuE9hvCcQULeWfIdou962Q/360fx360f" alt="Card Image">
+            <div class="text">
+                <h2>Your Title</h2>
+                <p>Your text content goes here.</p>
+            </div>
+        </div>
+            <article>
+                <h3>Projekts 1</h3>
+                <p>Īss apraksts par projektu.</p>
+                <a href="#">Skatīt projektu</a>
+            </article>
+            <article>
+                <h3>Projekts 2</h3>
+                <p>Īss apraksts par projektu.</p>
+                <a href="#">Skatīt projektu</a>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Kontakti</h2>
+            <form>
+                <label for="name">Vārds:</label>
+                <input type="text" id="name" required>
+                <label for="email">E-pasts:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Nosūtīt</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mani Vārds. Visas tiesības aizsargātas.</p>
+        <div>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
